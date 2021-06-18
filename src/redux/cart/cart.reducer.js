@@ -29,6 +29,11 @@ const cartReducer = (state = INITIAL_STATE, action) => {
           (cartItem) => cartItem.id !== action.payload.id
         ),
       };
+    case CartActionTypes.CLEAR_CART:
+      return {
+        ...state,
+        cartItems: [], //////// logout clear cart test
+      };
     default:
       return state;
   }
