@@ -9,6 +9,7 @@ import {
   CollectionTitle,
   CollectionItemsContainer,
 } from "./collection.styles";
+import { useEffect } from "react";
 
 const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
